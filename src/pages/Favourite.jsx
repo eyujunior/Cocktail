@@ -13,6 +13,8 @@ const Favourite = () => {
       setShowMessage(true)
     }
     dispatch(setFavourite(cocktails))
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   return (
     <section className='text-white absolute top-4 w-full'>
