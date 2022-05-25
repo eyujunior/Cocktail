@@ -15,7 +15,7 @@ const CocktailList = () => {
     } else if (location.pathname === '/favourite') {
       setCocktailItems(favourite)
     }
-  }, [cocktail, favourite])
+  }, [cocktail, favourite, location.pathname])
   return (
     <div className='recipe-container px-4 md:px-8 mb-40'>
       {cocktailItems.map((item) => {
