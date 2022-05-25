@@ -8,7 +8,7 @@ const Favourite = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     let cocktails = localStorage.getItem('cocktails')
-    cocktails = JSON.parse(cocktails)
+    cocktails = JSON.parse(cocktails) || []
     if (cocktails.length === 0) {
       setShowMessage(true)
     }
