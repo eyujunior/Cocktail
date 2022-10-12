@@ -24,7 +24,7 @@ const SearchBar = () => {
         />
         <button
           type="submit"
-          className=" bg-green px-4 py-2 md:p-6 rounded-md md:rounded-l-none flex items-center justify-center space-x-2 text-black w-full"
+          className=" bg-green px-4 py-2 md:p-6 rounded-md md:rounded-l-none flex items-center justify-center space-x-2 text-black w-full md:w-auto"
         >
           <SearchIcon className="h-7 w-7" />
           <span className="md:font-semibold ">Search</span>

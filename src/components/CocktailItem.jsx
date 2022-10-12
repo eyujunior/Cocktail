@@ -90,7 +90,7 @@ const CocktailItem = ({ cocktailItem }) => {
             <p className="text-xl font-bold text-green">
               {cocktailItem.strDrink}
             </p>
-            <p className=" text-stone-800 text-sm">
+            <p className=" text-stone-400 text-sm">
               {cocktailItem.strCategory}
             </p>
           </div>
