@@ -18,16 +18,16 @@ const SearchBar = () => {
       >
         <input
           type="text"
-          className="p-6 bg-[#140808] w-full mb-2 md:mb-0 md:w-1/3 outline-none rounded-l-lg text-white"
+          className="p-6 bg-[#140808] w-full mb-4 md:mb-0 md:w-1/3 outline-none rounded-l-lg text-white"
           placeholder="Search cocktails..."
           ref={inputRef}
         />
         <button
           type="submit"
-          className=" bg-green px-4 py-2 md:p-6 md:rounded-r-lg flex items-center space-x-2 text-black"
+          className=" bg-green px-4 py-2 md:p-6 rounded-md md:rounded-l-none flex items-center justify-center space-x-2 text-black w-full"
         >
           <SearchIcon className="h-7 w-7" />
-          <span className="font-semibold ">Search</span>
+          <span className="md:font-semibold ">Search</span>
         </button>
       </form>
     </div>

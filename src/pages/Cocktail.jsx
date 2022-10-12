@@ -47,18 +47,18 @@ const Cocktail = () => {
 
   return (
     <section className="text-stone-200 absolute top-4 left-1/2 -translate-x-1/2 w-full layout">
-      <h1 className="font-title text-5xl sm:text-6xl text-center leading-snug mt-32 mb-20 2xl:mb-32">
+      <h1 className="font-title text-4xl sm:text-6xl text-center leading-snug mt-28 sm:mb-20 mb-6 2xl:mb-32">
         {strDrink}
       </h1>
       <div className="flex items-start space-y-4 lg:space-x-8 2xl:space-x-16 justify-start flex-col lg:flex-row ">
         <img
           src={strDrinkThumb}
           alt="cocktail"
-          className="max-w-[50%] rounded-3xl"
+          className="md:max-w-[50%] rounded-3xl"
         />
         <div className="flex items-start justify-start flex-col text-xl">
           <div className="flex items-start md:items-center justify-between w-full mb-6 flex-col md:flex-row">
-            <h2 className="text-4xl mb-4 md:mb-0">Instructions</h2>
+            <h2 className="text-4xl hidden md:block">Instructions</h2>
             {strVideo && (
               <a
                 href={strVideo}
@@ -69,7 +69,7 @@ const Cocktail = () => {
               </a>
             )}
           </div>
-          <p className="lg:w-4/5 2xl:w-3/4 text-stone-300 font-light">
+          <p className="lg:w-4/5 2xl:w-3/4 text-stone-300 text-sm md:text-base md:font-light">
             {strInstructions}
           </p>
         </div>

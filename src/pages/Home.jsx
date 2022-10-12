@@ -15,7 +15,7 @@ const Home = () => {
               more.
             </p>
             <a href="/#recipe" className="flex md:block justify-center">
-              <button className="px-4 md:px-6 py-2 bg-white text-stone-800 border-white text-xl rounded-md border-2">
+              <button className="px-4 md:px-6 py-2 bg-white text-stone-800 border-white md:text-xl rounded-md border-2">
                 Search
               </button>
             </a>
