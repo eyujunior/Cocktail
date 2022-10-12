@@ -1,17 +1,14 @@
 import CocktailList from "../components/CocktailList";
 import { useDispatch } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { setFavourite } from "../store/features/cocktailSlice";
 
 const Favourite = () => {
-  const [showMessage, setShowMessage] = useState(false);
   const dispatch = useDispatch();
   useEffect(() => {
     let cocktails = localStorage.getItem("cocktails");
     cocktails = JSON.parse(cocktails) || [];
-    if (cocktails.length === 0) {
-      setShowMessage(true);
-    }
+
     dispatch(setFavourite(cocktails));
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
