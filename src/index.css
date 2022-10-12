@@ -5,7 +5,13 @@
 .h-screen-hero {
   height: calc(100vh - 3rem);
 }
-
+.layout {
+  max-width: 95rem;
+  /*  1520px */
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
   background-color: #090000;
 }
